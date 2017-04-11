@@ -1,5 +1,3 @@
-# проект «Нердс» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
-
 * [Павел Филинских](https://up.htmlacademy.ru/adaptive/10/user/19082).
 
 ---
