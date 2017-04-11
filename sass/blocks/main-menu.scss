@@ -1,0 +1,44 @@
+.main-menu {
+	float: left;
+	width: 460px;
+}
+
+.main-menu__list {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
+}
+
+.main-menu__item {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 30px;
+	vertical-align: top;
+}
+
+.main-menu__link {
+	display: block;
+	padding: 53px 20px 6px 25px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+
+  &:hover {
+  	color: #fb565a;
+  }
+
+  &:focus {
+  	color: #000;
+  	opacity: 0.4;
+  }
+}
+
+.main-menu__item--active-page {
+	display: block;
+	margin: 53px 20px 6px 23px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 2px solid #fb565a;
+}

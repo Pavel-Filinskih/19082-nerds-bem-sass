@@ -7,5 +7,80 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <!-- меню шапка начало -->
+  	<header class="wrapper-background">
+  		<div class="wrapper-main collapsefix">
+  			<a class="logo" href="#">
+  				<img src="img/nerds-logo.png" width="139" height="56" alt="Дизайн-студия Nёrds" />
+  			</a>
+
+  			<nav class="main-menu">
+  				<ul class="main-menu__list">
+  					<li class="main-menu__item main-menu__item--active-page"><span>Студия</span></li>
+  					<li class="main-menu__item"><a class="main-menu__link" href="#">Клиенты</a></li>
+  					<li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Магазин</a></li>
+  					<li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
+  				</ul>
+  			</nav>
+
+  			<div class="basket">
+  				<a href="#" class="basket__cart basket__icon">Корзина</a>
+  			</div>
+  		</div>
+  	</header>
+    <!-- начало слайдер -->
+    <div class="slider">
+      <div class="wrapper-main">
+        <input type="slider__radio" id="btn-1" name="toggle" checked>
+        <input type="slider__radio" id="btn-2" name="toggle">
+        <input type="slider__radio" id="btn-3" name="toggle">
+
+        <div class="slider-control">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+
+        <div class="slides">
+          <div class="slides__slide">
+            <div class="slides-description">
+              <b>Долго, дорого, <br>
+              скрупулезно.</b>
+              <p>Математически выверенный дизайн, <br>
+              для вашего сайта или мобильного приложения.</p>
+              <a class="slides-description__link" href="#">Узнать больше</a>
+            </div>
+
+            <div class="slides-gadgets">
+              <img src="img/gadgets.png" width="338" height="231" alt="Гаджеты">
+            </div>
+          </div>
+
+          <div class="slides__slide">
+            <div class="slides-description">
+              <b>Любите ли вы математику, как любим ее мы?</b>
+              <p>Нашим дизайнерам мы уделяем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="slides-description__link" href="#">Узнать больше</a>
+            </div>
+
+            <div class="slides-calculator">
+              <img src="img/calculator.png" width="230" height="249" alt="Гаджеты">
+            </div>
+          </div>
+          <div class="slides__slide">
+            <div class="slides-description">
+              <b>Только наркотики, <br>
+              только хардкор!</b>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="slides-description__link" href="#">Узнать больше</a>
+            </div>
+
+            <div class="slides-robot">
+              <img src="img/robot.png" width="333" height="231" alt="Гаджеты">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

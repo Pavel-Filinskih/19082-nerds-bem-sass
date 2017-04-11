@@ -1,0 +1,46 @@
+.basket {
+	float: right;
+	min-width: 100px;
+}
+
+.basket__icon::before {
+	content: "\62";
+	margin-right: 25px;
+	font-family: "symbols-nerds";
+	font-size: 16px;
+	line-height: 8,56px;
+	color: #000;
+	opacity: 0.3;
+}
+
+.basket__icon:hover::before {
+  color: #fb565a;
+  opacity: 1;
+}
+
+.basket__icon:focus::before {
+  color: #000;
+  opacity: 0.15;
+}
+
+.basket__cart {
+	display: inline-block;
+	margin-top: 52px;
+	margin-bottom: 6px;
+	padding-left: 16px;
+	font-size: 14px;
+	line-height: 30px;
+	vertical-align: top;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+
+  &:hover {
+  	color: #fb565a;
+  }
+
+  &:focus {
+  	color: #000;
+  	opacity: 0.4;
+  }
+}

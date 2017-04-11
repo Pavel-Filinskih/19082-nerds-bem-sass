@@ -1,0 +1,39 @@
+body {
+	font-family: "Roboto", "Tahoma", sans-serif;
+	min-width: 900px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color: #283136;
+	background-color: #fff;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: normal;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+h1, h2 {
+	font-weight: normal;
+	color: black;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.collapsefix {
+	overflow: hidden;
+}

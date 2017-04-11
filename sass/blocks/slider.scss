@@ -1,0 +1,129 @@
+.slider {
+	position: relative;
+	width: 100%;
+	height: 238px;
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 80px;
+	margin-bottom: 80px;
+	background-color: #eee;
+}
+
+ .slider input[type=radio] {
+	position: absolute;
+	opacity: 0;
+}
+
+.slider-control {
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	width: 200px;
+	height: 10px;
+	margin-left: -100px;
+	z-index: 1000;
+	text-align: center;
+}
+
+.slider-control label {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	margin-left: 0 3px;
+	vertical-align: top;
+	background-color: #fff;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-control label[for="btn-1"],
+#btn-2:checked ~ .slider-control label[for="btn-2"],
+#btn-3:checked ~ .slider-control label[for="btn-3"] {
+	background-color: #c1c1c1;
+}
+
+.slide {
+	position: absolute;
+	width: 880px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.slide-description {
+	float: left;
+	width: 470px;
+	padding: 40px 0;
+}
+
+.slide-description b {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+.slide-description p {
+	max-height: 92px;
+	overflow: hidden;
+}
+
+.slides-gadgets {
+	float: right;
+	padding-top: 20px;
+}
+
+.slides-calculator {
+	float: right;
+	padding-top: 24px;
+	padding-right: 10px;
+}
+
+.slides-robot {
+	float: right;
+	padding-right: 8px;
+}
+
+.slide {
+	display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+	display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+	display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+	display: block;
+}
+
+.slides-description__link {
+	display: inline-block;
+	width: 230px;
+	padding: 10px 5px;
+	margin-top: 14px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: top;
+	color: #fff;
+	border-radius: 2px;
+	background-color: #fb565a;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.slides-description__link:hover {
+	background-color: #d6494d;
+}
+
+.slides-description__link:focus {
+	background-color: #b63538;
+	box-shadow: inset 0 3px #9b2d30;
+}
