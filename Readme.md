@@ -9,8 +9,6 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`.
 
 ---
 
-### Памятка
-
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/19082-pink.svg?branch=master
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/19082-pink
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/19082-pink/dev-status.svg?style=flat-square
