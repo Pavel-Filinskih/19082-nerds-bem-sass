@@ -1,0 +1,32 @@
+.partners {
+	margin-bottom: 86px;
+	padding-top: 43px;
+	padding-bottom: 28px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.partners__pict {
+	opacity: 0.2;
+}
+
+.partners__link {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+
+  &:hover .partners__pict{
+  	opacity: 1;
+  	cursor: pointer;
+  	border: none;
+  }
+}
+
+.partners__pict[src*="glukhanko"] {
+	margin-left: 10px;
+}
+
+.partners__pict[src*="html-academy"],
+.partners__pict[src*="glukhanko"] {
+	margin-right: 120px;
+}

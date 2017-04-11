@@ -26,3 +26,26 @@
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-instagramm::before { content: "\1f4f7"; } /* "\1f4f7" */
+
+.icon-facebook::before,
+.icon-vk::before,
+.icon-instagramm::before {
+	width: 23px;
+	font-family: "symbols-nerds";
+	font-size: 23px;
+	line-height: 60px;
+	vertical-align: middle;
+	color: #fff;
+}
+
+.icon-vk::before {
+	content: "\76";
+}
+
+.icon-facebook::before {
+	content: "\66";
+}
+
+.icon-instagramm::before {
+	content: "\1f4f7";
+}

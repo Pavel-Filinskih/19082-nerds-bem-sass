@@ -1,0 +1,104 @@
+.company-wrapper {
+	margin-bottom: 50px;
+}
+
+.company-info,
+.company-offers,
+.company-logo,
+.company-benefits  {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.company-info,
+.company-offers {
+	width: 580px;
+	padding-right: 50px;
+}
+
+.company-logo,
+.company-benefits {
+	width: 230px;
+}
+
+.company-logo {
+	padding-left: 15px;
+	text-align: center;
+}
+
+.company-info__promo {
+	display: inline-block;
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 36px;
+	vertical-align: top;
+}
+
+.company-logo__text {
+	padding-top: 4px;
+	text-transform: uppercase;
+}
+
+.company-logo__date::before,
+.company-logo__date::after {
+	position: relative;
+	content: "";
+	display: inline-block;
+	width: 26%;
+	vertical-align: middle;
+	border-bottom: 2px solid #eee;
+}
+
+.company-logo__date::before {
+	right: 15px;
+	margin-left: -50%;
+}
+.company-logo__date::after {
+	left: 15px;
+	margin-right: -50%;
+}
+
+.company-info,
+.company-logo {
+	margin-bottom: 13px;
+}
+
+.company-offers__title,
+.company-benefits__title {
+	padding-bottom: 7px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.company-benefits {
+	padding-left: 7px;
+}
+
+.company-offers__list,
+.company-benefits__list  {
+	margin: 0;
+	padding: 0;
+}
+
+.company-offers__item,
+.company-benefits__item {
+	padding-bottom: 22px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.company-offers__item::before ,
+.company-benefits__item::before {
+	position: relative;
+	bottom: 2px;
+	right: 11px;
+	content: "";
+	display: inline-block;
+	width: 25px;
+	margin-left: 10px;
+	vertical-align: middle;
+	border-bottom: 2px solid #fb565a;
+}

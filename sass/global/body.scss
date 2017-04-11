@@ -28,6 +28,12 @@ img {
 	height: auto;
 }
 
+iframe {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
 .clearfix::after {
 	content: "";
 	display: table;

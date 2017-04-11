@@ -1,0 +1,154 @@
+.services {
+	margin-bottom: 59px;
+	padding-bottom: 80px;
+	border-bottom: 2px solid #eee;
+	overflow: hidden;
+}
+
+.services-site {
+	width: 240px;
+	display: block;
+	float: left;
+	margin-right: 80px;
+}
+
+.services-site__title {
+	margin-top: 17px;
+	text-transform: uppercase;
+}
+
+.services-site__text {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #283136;
+}
+
+.services-site__link {
+	display: block;
+	width: 75px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 2px;
+	background-color: #fb565a;
+	padding: 8px 32px;
+
+  &:hover {
+  	background-color: #d6494d;
+  	color: #f4d9d9;
+  }
+
+  &:active {
+  	background-color: #b63538;
+  	color: #f4d9d9;
+  }
+
+  &:focus {
+  	background-color: #b63538;
+  	box-shadow: inset 0 3px #9b2d30;
+  }
+}
+
+.services-apps {
+	width: 240px;
+	display: block;
+	float: left;
+	margin-right: 80px;
+}
+
+.services-apps__title {
+	margin-top: 17px;
+	margin-left: -5px;
+	text-transform: uppercase;
+}
+
+.services-apps__text {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #283136;
+}
+
+.services-apps__link {
+	display: block;
+	width: 75px;
+	padding: 8px 32px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 2px;
+	background-color: #00ca74;
+
+  &:hover {
+  	background-color: #01a25e;
+  	color: #f4d9d9;
+  }
+
+  &:active {
+  	background-color: #009053;
+  	color: #f4d9d9;
+  }
+
+  &:focus {
+  	background-color: #b63538;
+  	box-shadow: inset 0 3px #9b2d30;
+  }
+}
+
+.services-presentations {
+	width: 240px;
+	display: block;
+	float: left;
+}
+
+.services-presentations__title {
+	margin-top: 17px;
+	margin-left: -4px;
+	text-transform: uppercase;
+}
+
+.services-presentations__text {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #283136;
+}
+
+.services-presentations__link {
+	display: block;
+	width: 75px;
+	padding: 8px 32px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 2px;
+	background-color: #efc84a;
+
+  &:hover {
+  	background-color: #d6ae2c;
+  	color: #f4d9d9;
+  }
+
+  &:active {
+  	background-color: #c09b24;
+  	color: #f4d9d9;
+  }
+
+  &:focus {
+  	background-color: #b63538;
+  	box-shadow: inset 0 3px #9b2d30;
+  }
+}
