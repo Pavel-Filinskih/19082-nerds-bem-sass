@@ -43,42 +43,42 @@
 	background-color: #c1c1c1;
 }
 
-.slides__slide {
+.slide {
 	position: absolute;
 	width: 880px;
 	height: 100%;
 	overflow: hidden;
 }
 
-.slides-description {
+.slide-description {
 	float: left;
 	width: 470px;
 	padding: 40px 0;
 }
 
-.slides-description b {
+.slide-description b {
 	font-size: 36px;
 	font-weight: 500;
 	line-height: 36px;
 }
 
-.slides-description p {
+.slide-description p {
 	max-height: 92px;
 	overflow: hidden;
 }
 
-.slides-gadgets {
+.slide-gadgets {
 	float: right;
 	padding-top: 20px;
 }
 
-.slides-calculator {
+.slide-calculator {
 	float: right;
 	padding-top: 24px;
 	padding-right: 10px;
 }
 
-.slides-robot {
+.slide-robot {
 	float: right;
 	padding-right: 8px;
 }
@@ -99,7 +99,7 @@
 	display: block;
 }
 
-.slides-description__link {
+.slider .btn-more-info {
 	display: inline-block;
 	width: 230px;
 	padding: 10px 5px;
@@ -117,13 +117,13 @@
 	border: none;
 	outline: none;
 	cursor: pointer;
+}
 
-  &:hover {
-  	background-color: #d6494d;
-  }
+.slider .btn-more-info:hover {
+	background-color: #d6494d;
+}
 
-  &:focus {
-  	background-color: #b63538;
-  	box-shadow: inset 0 3px #9b2d30;
-  }
+.slider .btn-more-info:focus {
+	background-color: #b63538;
+	box-shadow: inset 0 3px #9b2d30;
 }

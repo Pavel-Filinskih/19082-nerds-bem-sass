@@ -168,15 +168,15 @@
     <!-- начало блок наше местоположение -->
   	<div class="map">
   		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.581613527351!2d30.321602719276925!3d59.9390843949937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462565006533" width="1200" height="415" style="border:0" allowfullscreen></iframe>
-  		<div class="map-wrapper">
+  		<div class="map__wrapper">
   				<div class="map-info">
   					<h2 class="map-info__title">NЁRDS DESIGN STUDIO</h2>
   					<p class="map-info__adress">191186, Санкт-Петербург, <br>
   					ул. Б. Конюшенная, д. 19/8</p>
-  					<p class="map-info__phone">тел. +7 (812) 275-75-75</p>
+  					<p class="map__phone-number">тел. +7 (812) 275-75-75</p>
 
   				<div class="map-mail">
-  					<a class="map-mail__link" href="form.html">Напишите нам</a>
+  					<a class="map-mail__send" href="form.html">Напишите нам</a>
   				</div>
   			</div>
   		</div>
@@ -199,5 +199,31 @@
 
   		</div>
   	</footer>
+
+    <!-- начало модальное окно форма -->
+    <div class="modal-window">
+  		<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+  			<div class="modal-form-user clearfix">
+  				<div class="modal-username-field">
+  					<label for="username">Ваше имя:</label>
+  					<input type="text" id="username" name="username" value="Представьтесь, пожалуйста" required>
+  				</div>
+
+  				<div class="modal-mail-field">
+  					<label for="mail">Ваш e-mail:</label>
+  					<input type="text" id="mail" name="mail" value="Для отправки ответа" required>
+  				</div>
+  			</div>
+
+  				<label for="textarea">Текст письма:</label>
+  				<textarea name="textarea" id="textarea" required>В свободной форме</textarea>
+
+  			<a class="send-info" href="#">Отправить</a>
+
+  			<button class="modal-close" type="button">Закрыть</button>
+  		</form>
+  	</div>
+
+    <script src="js/popup.js"></script>
   </body>
 </html>
