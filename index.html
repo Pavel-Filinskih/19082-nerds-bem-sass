@@ -31,23 +31,23 @@
 
     <!-- начало слайдер -->
   	<div class="slider">
-  		<div class="wrapper-main">
-  			<input type="radio" id="btn-1" name="toggle" checked>
-  			<input type="radio" id="btn-2" name="toggle">
-  			<input type="radio" id="btn-3" name="toggle">
+  		<div class="slider__wrapper-main">
+  			<input class="slider__radio" type="radio" id="btn-1" name="toggle" checked>
+  			<input class="slider__radio" type="radio" id="btn-2" name="toggle">
+  			<input class="slider__radio" type="radio" id="btn-3" name="toggle">
 
   			<div class="slider-control">
-  				<label for="btn-1"></label>
-  				<label for="btn-2"></label>
-  				<label for="btn-3"></label>
+  				<label class="slider-control__btn" for="btn-1"></label>
+  				<label class="slider-control__btn" for="btn-2"></label>
+  				<label class="slider-control__btn" for="btn-3"></label>
   			</div>
 
   			<div class="slides">
   				<div class="slide">
   					<div class="slide-description">
-  						<b>Долго, дорого, <br>
+  						<b class="slide-description__tagline">Долго, дорого, <br>
   						скрупулезно.</b>
-  						<p>Математически выверенный дизайн, <br>
+  						<p class="slide-description__text">Математически выверенный дизайн, <br>
   						для вашего сайта или мобильного приложения.</p>
   						<a href="#" class="btn-more-info">Узнать больше</a>
   					</div>
@@ -59,8 +59,8 @@
 
   				<div class="slide">
   					<div class="slide-description">
-  						<b>Любите ли вы математику, как любим ее мы?</b>
-  						<p>Нашим дизайнерам мы уделяем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
+  						<b class="slide-description__tagline">Любите ли вы математику, как любим ее мы?</b>
+  						<p class="slide-description__text">Нашим дизайнерам мы уделяем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
   						<a href="#" class="btn-more-info">Узнать больше</a>
   					</div>
 
@@ -70,9 +70,9 @@
   				</div>
   				<div class="slide">
   					<div class="slide-description">
-  						<b>Только наркотики, <br>
+  						<b class="slide-description__tagline">Только наркотики, <br>
   						только хардкор!</b>
-  						<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+  						<p class="slide-description__text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
   						<a href="#" class="btn-more-info">Узнать больше</a>
   					</div>
 
@@ -203,24 +203,24 @@
     <!-- начало модальное окно форма -->
     <div class="modal-window">
   		<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-  			<div class="modal-form-user clearfix">
-  				<div class="modal-username-field">
-  					<label for="username">Ваше имя:</label>
-  					<input type="text" id="username" name="username" value="Представьтесь, пожалуйста" required>
+  			<div class="modal-form-wrapper-name-email clearfix">
+  				<div class="modal-form-username-field">
+  					<label class="modal-form-username-field__label" for="username">Ваше имя:</label>
+  					<input class="modal-form-username-field__input" type="text" id="username" name="username" value="Представьтесь, пожалуйста" required>
   				</div>
 
-  				<div class="modal-mail-field">
-  					<label for="mail">Ваш e-mail:</label>
-  					<input type="text" id="mail" name="mail" value="Для отправки ответа" required>
+  				<div class="modal-form-mail-field">
+  					<label class="modal-form-mail-field__label" for="mail">Ваш e-mail:</label>
+  					<input class="modal-form-mail-field__input" type="text" id="mail" name="mail" value="Для отправки ответа" required>
   				</div>
   			</div>
 
-  				<label for="textarea">Текст письма:</label>
-  				<textarea name="textarea" id="textarea" required>В свободной форме</textarea>
+  				<label class="modal-form__textarea-label" for="textarea">Текст письма:</label>
+  				<textarea class="modal-form__textarea" name="textarea" id="textarea" required>В свободной форме</textarea>
 
-  			<a class="send-info" href="#">Отправить</a>
+  			<a class="modal-form__button" href="#">Отправить</a>
 
-  			<button class="modal-close" type="button">Закрыть</button>
+  			<button class="modal-form-close" type="button">Закрыть</button>
   		</form>
   	</div>
 
