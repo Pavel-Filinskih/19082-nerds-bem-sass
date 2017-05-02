@@ -34,7 +34,7 @@
 	background-color: #00ca74;
 }
 
-.price-filter-range-toggle {
+.price-filter-range__toggle {
 	position: absolute;
 	top: 30px;
 	left: 0px;
@@ -47,15 +47,15 @@
 	cursor: pointer;
 }
 
-.price-filter-range--min-toggle {
+.price-filter-range__min-toggle {
 	left: 20px;
 }
 
-.price-filter-range--max-toggle {
+.price-filter-range__max-toggle {
 	left: 158px;
 }
 
-.price-field__input {
+.price-field-min__input {
 	width: 60px;
 	padding: 8px 10px;
 	margin-left: 6px;
@@ -70,12 +70,27 @@
 	border-radius: 5px;
 }
 
-.price-field__min-price {
+.price-field-max__input {
+	width: 60px;
+	padding: 8px 10px;
+	margin-left: 6px;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 22px;
+	text-align: center;
+	color: #283136;
+	border: none;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+.price-field-min {
 	position: absolute;
 	left: 0;
 }
 
-.price-field__max-price {
+.price-field-max {
 	position: absolute;
 	right: 0;
 }
