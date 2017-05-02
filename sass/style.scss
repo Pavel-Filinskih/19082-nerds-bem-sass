@@ -21,3 +21,20 @@
 
 @import "blocks/modal-window";
 @import "blocks/animation";
+
+// стили catalog.scss
+
+@import "blocks/welcom";
+@import "blocks/catalog-content";
+@import "blocks/catalog-filters";
+@import "blocks/price-filter";
+@import "blocks/website-type";
+@import "blocks/website-specifics";
+@import "blocks/form-filters";
+@import "blocks/inputs";
+
+@import "blocks/wrapper-catalog";
+@import "blocks/catalog-content";
+@import "blocks/catalog-templates";
+@import "blocks/catalog-pointer";
+@import "blocks/pagination";

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <!-- меню шапка начало -->
+
   	<header class="wrapper-background">
   		<div class="wrapper-main collapsefix">
   			<a class="logo" href="#">
@@ -27,15 +27,182 @@
   				<a href="#" class="basket__cart basket__icon">Корзина</a>
   			</div>
   		</div>
+
+      <div class="welcom">
+				<h1 class="welcom__title">Добро пожаловать в магазин готовых макетов</h1>
+			</div>
   	</header>
 
-    <!-- начало блок фильтры и каталог -->
   	<div class="catalog-content">
   		<div class="wrapper-main clearfix">
+
+        <aside class="catalog-filters">
+  				<form clsdd="form-filters" action="form.php" method="GET">
+
+  					<div class="price-filter">
+  						<h2 class="price-filter__title">Стоимость:</h2>
+
+  						<div class="price-filter-range">
+  							<div class="price-filter-range__scale">
+  								<div class="price-filter-range__bar"> </div>
+  							</div>
+
+  							<div class="price-filter-range-toggle price-filter-range--min-toggle"> </div>
+  							<div class="price-filter-range-toggle price-filter-range--max-toggle"> </div>
+  						</div>
+
+  						<div class="price-filter-field">
+  							<label class="price-field__min-price">
+  								от <input class="price-field__input" type="text" name="min-price" value="0">
+  							</label>
+
+  							<label class="price-field__max-price">
+  								до <input class="price-field__input" type="text" name="max-price" value="15000">
+  							</label>
+  						</div>
+  					</div>
+
+  					<div class="website-type">
+  						<fieldset class="website-grid">
+  							<legend class="website-grid__title">Сетка:</legend>
+
+  							<input type="radio" id="adaptive" name="website-types" value="adaptive" checked> <label for="adaptive"> Адаптивная </label>
+  							<input type="radio" id="fixed" name="website-types" value="fixed"> <label for="fixed"> Фиксированная </label>
+  							<input type="radio" id="fluid" name="website-types" value="fluid"> <label for="fluid"> Резиновая </label>
+  						</fieldset>
+
+  						<fieldset class="website-specifics">
+  							<legend class="website-specifics__title">Особенности:</legend>
+
+  							<input type="checkbox" id="slider-type" name="slider" checked> <label for="slider-type"> Слайдер </label>
+  							<input type="checkbox" id="features-block" name="advantages-block"> <label for="features-block"> Блок преимуществ </label>
+  							<input type="checkbox" id="news" name="news" checked> <label for="news"> Новости </label>
+  							<input type="checkbox" id="gallery-type" name="gallery"> <label for="gallery-type"> Галерея </label>
+  							<input type="checkbox" id="cart-type" name="cart"> <label for="cart-type"> Корзина	</label>
+  						</fieldset>
+  					</div>
+  					<button class="form-filters__button" type="submit">Показать</button>
+  				</form>
+  			</aside>
+
+        <div class="wrapper-catalog">
+          <div class="catalog-header clearfix">
+  					<div class="catalog-filters">
+  						<span class="catalog-filters__title">Сортировать:</span>
+  						<ul class="catalog-filters__list">
+  							<li class="catalog-filters__item"><a class="catalog-filters__link" href="#">По цене</a></li>
+  							<li class="catalog-filters__item"><a class="catalog-filters__link" href="#">По типу</a></li>
+  							<li class="catalog-filters__item"><a class="catalog-filters__link" href="#">По функционалу</a></li>
+  						</ul>
+  					</div>
+
+  					<div class="catalog-pointer">
+  						<a class="catalog-pointer__down icon-down-dir" href="#"></a>
+  						<a class="catalog-pointer__up icon-up-dir" href="#"></a>
+  					</div>
+  				</div>
+
+          <div class="catalog-templates">
+            <div class="aviator">
+              <div class="aviator-picture">
+                <img class="aviator-picture__image" src="img/aviator.jpg" width="240" height="240" alt="Образец сайта Aviator">
+              </div>
+
+              <div class="aviator-description">
+                <a class="aviator-description__link-title" href="#"> <h3 class="aviator-description__name-title">Aviator</h3> </a>
+                <p class="aviator-description__text">Одностраничный макет с авторским дизайном</p>
+                <a class="aviator-description__btn-price" href="#">8000 р.</a>
+              </div>
+            </div>
+
+            <div class="sunset">
+              <div class="sunset-picture">
+                <img class="sunset-picture__image" src="img/sunset.jpg" width="240" height="240" alt="Образец сайта Sunset">
+              </div>
+
+              <div class="sunset-description">
+                <a class="sunset-description__link-title" href="#"> <h3 class="sunset-description__name-title">Sunset</h3> </a>
+                <p class="sunset-description__text">Интернет-магазин с личным кабинетом</p>
+                <a class="sunset-description__btn-price" href="#">10000 р.</a>
+              </div>
+            </div>
+
+            <div class="forte sample">
+              <div class="forte-picture">
+                <img class="forte-picture__image" src="img/forte.jpg" width="240" height="240" alt="Образец сайта Forte">
+              </div>
+
+              <div class="forte-description">
+                <a class="forte-description__link-title" href="#"> <h3 class="forte-description__name-title">Forte</h3> </a>
+                <p class="forte-description__text">Отличный макет для личного блога</p>
+                <a class="forte-description__btn-price" href="#">5000 р.</a>
+              </div>
+            </div>
+
+            <div class="modern-thai">
+              <div class="modern-thai-picture">
+                <img class="modern-thai-picture__image" src="img/modern-organic-thai.jpg" width="240" height="240" alt="Образец сайта Modern Organic THAI">
+              </div>
+
+              <div class="modern-thai-description">
+                <a class="modern-thai-description__link-title" href="#"> <h3 class="modern-thai-description__name-title">Modern Organic THAI</h3> </a>
+                <p class="modern-thai-description__text">Сайт для ресторана быстрого питания</p>
+                <a class="modern-thai-description__btn-price" href="#">12000 р.</a>
+              </div>
+            </div>
+
+            <div class="avenue">
+              <div class="avenue-picture">
+                <img class="avenue-picture__image" src="img/avenue.jpg" width="240" height="240" alt="Образец сайта Avenue">
+              </div>
+
+              <div class="avenue-description">
+                <a class="avenue-description__link-title" href="#"> <h3 class="avenue-description__name-title">Avenue</h3> </a>
+                <p class="avenue-description__text">Макет для блога  о путешествиях</p>
+                <a class="avenue-description__btn-price" href="#">8000 р.</a>
+              </div>
+            </div>
+
+            <div class="dovetail">
+              <div class="dovetail-picture">
+                <img class="dovetail-picture__image" src="img/dovetail.jpg" width="240" height="240" alt="Образец сайта Dovetail">
+              </div>
+
+              <div class="dovetail-description">
+                <a class="dovetail-description__link-title" href="#"> <h3 class="dovetail-description__name-title">Dovetail</h3> </a>
+                <p class="dovetail-description__text">Интернет-магазин с галереей товаров</p>
+                <a class="dovetail-description__btn-price" href="#">14000 р.</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+  					<span class="pagination__current pagination__current--active">1</span>
+  					<a class="pagination__link" href="#">2</a>
+  					<a class="pagination__link" href="#">3</a>
+  					<a class="pagination__link pagination__link--next" href="#next">Следующая</a>
+  				</div>
+
+        </div>
   		</div>
   	</div>
 
-    <!-- начало футер -->
+  	<div class="map">
+  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.581613527351!2d30.321602719276925!3d59.9390843949937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462565006533" width="1200" height="415" style="border:0" allowfullscreen></iframe>
+  		<div class="map__wrapper">
+  				<div class="map-info">
+  					<h2 class="map-info__title">NЁRDS DESIGN STUDIO</h2>
+  					<p class="map-info__adress">191186, Санкт-Петербург, <br>
+  					ул. Б. Конюшенная, д. 19/8</p>
+  					<p class="map__phone-number">тел. +7 (812) 275-75-75</p>
+
+  				<div class="map-mail">
+  					<a class="map-mail__send" href="form.html">Напишите нам</a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
   	<footer class="footer-main">
   		<div class="wrapper-main clearfix">
 
@@ -52,5 +219,29 @@
 
   		</div>
   	</footer>
+
+    <div class="modal-window">
+  		<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+  			<div class="modal-form-wrapper-name-email clearfix">
+  				<div class="modal-form-username-field">
+  					<label class="modal-form-username-field__label" for="username">Ваше имя:</label>
+  					<input class="modal-form-username-field__input" type="text" id="username" name="username" value="Представьтесь, пожалуйста" required>
+  				</div>
+
+  				<div class="modal-form-mail-field">
+  					<label class="modal-form-mail-field__label" for="mail">Ваш e-mail:</label>
+  					<input class="modal-form-mail-field__input" type="text" id="mail" name="mail" value="Для отправки ответа" required>
+  				</div>
+  			</div>
+
+  				<label class="modal-form__textarea-label" for="textarea">Текст письма:</label>
+  				<textarea class="modal-form__textarea" name="textarea" id="textarea" required>В свободной форме</textarea>
+
+  			<a class="modal-form__button" href="#">Отправить</a>
+
+  			<button class="modal-form-close" type="button">Закрыть</button>
+  		</form>
+  	</div>
+    <script src="js/popup.js"></script>
   </body>
 </html>

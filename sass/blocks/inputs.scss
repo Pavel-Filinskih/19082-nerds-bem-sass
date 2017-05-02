@@ -1,0 +1,61 @@
+input[type="radio"],
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	position: relative;
+	display: block;
+	padding-bottom: 19px;
+	padding-left: 35px;
+	cursor: pointer;
+}
+
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	font-family: "symbols-nerds";
+	font-size: 28px;
+	color: #c1c1c1;
+}
+
+input[type="radio"] + label::before {
+	content: "\25cb";
+}
+
+input[type="radio"]:checked + label::before {
+	content: "\25cf";
+}
+
+input[type="checkbox"] + label::before {
+	content: "\2610";
+}
+
+input[type="checkbox"]:checked + label::before {
+	content: "\2611";
+}
+
+input[type="radio"] + label:hover::before,
+input[type="checkbox"] + label:hover::before {
+	color: #b5b5b5;
+}
+
+input[type="radio"]:disabled + label::before,
+input[type="checkbox"]:disabled + label::before {
+	color: #e9e9e9;
+}
+
+input[type="radio"] + label:hover,
+input[type="checkbox"] + label:hover {
+	color: #000;
+}
+
+input[type="radio"]:disabled + label,
+input[type="checkbox"]:disabled + label {
+	color: #a9adaf;
+}
