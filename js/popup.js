@@ -24,5 +24,6 @@ mailButton.addEventListener('click', function(event) {
 
 modalWindowClose.addEventListener('click', function(event) {
 	event.preventDefault();
+  modalForm.reset();
 	hideElement(modalWindow);
 });
