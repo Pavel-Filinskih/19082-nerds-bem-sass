@@ -1,5 +1,117 @@
-.wrapper-main {
-	width: 880px;
-	padding: 0 10px;
-	margin: 0 auto;
+@media (min-width: 320px) {
+  .wrapper-main {
+  	min-width: 300px;
+  	padding: 0 10px;
+  	margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper-main {
+  	width: 748px;
+  	padding: 0 10px;
+  	margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .wrapper-main {
+  	width: 1130px;
+  	padding: 0 10px;
+  	margin: 0 auto;
+  }
+
+  .logo {
+    margin-right: 230px;
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .services-site,
+  .services-apps {
+    margin-right: 0;
+  }
+
+  .services-site__link,
+  .services-apps__link,
+  .services-presentations__link {
+    width: 73%;
+  }
+
+  .company-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .company-info,
+  .company-offers {
+    padding-right: 0;
+  }
+
+  .company-offers {
+    width: 440px;
+    float: left;
+    padding-left: 40px;
+    padding-left: 107px;
+  }
+
+  .company-benefits {
+    float: right;
+    padding-left: 0;
+    padding-right: 110px;
+  }
+
+  .company-logo {
+    display: none;
+  }
+
+  .partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .map-info {
+    left: -110px;
+    bottom: 30px;
+  }
+
+  .discount__discount {
+    text-align: center;
+  }
+
+  .slide {
+    left: 137px;
+  	width: 980px;
+  }
+
+  .wrapper-catalog {
+    width: 800px;
+    display: inline-block;
+    margin-bottom: 60px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .aviator,
+  .sunset,
+  .forte,
+  .modern-thai,
+  .avenue,
+  .dovetail {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pagination {
+    margin-top: 30px;
+  }
+
+  .modal-window {
+    top: 1180px;
+  }
 }
