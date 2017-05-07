@@ -12,6 +12,144 @@
   	padding: 0 10px;
   	margin: 0 auto;
   }
+
+  .logo {
+    margin-right: 18px;
+  }
+
+  .basket {
+    margin-right: 10px;
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .services-site,
+  .services-apps {
+    margin-right: 0;
+  }
+
+  .services-site__link,
+  .services-apps__link,
+  .services-presentations__link {
+    width: 73%;
+  }
+
+  .company-logo {
+    display: none;
+  }
+
+  .company-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .company-info,
+  .company-offers {
+    padding-right: 0;
+  }
+
+  .company-offers {
+    width: 440px;
+    float: left;
+  }
+
+  .company-benefits {
+    float: right;
+    padding-left: 0;
+  }
+
+  .partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog-content {
+    padding-top: 20px;
+  }
+
+  .filters {
+  }
+
+  .price-filter {
+  width: 100%;
+  }
+
+  .price-field-max__input,
+  .price-field-min__input {
+  }
+
+  .wrapper-catalog {
+    width: 500px;
+    padding-left: 0;
+  }
+
+  .aviator,
+  .sunset,
+  .forte,
+  .modern-thai,
+  .avenue,
+  .dovetail {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .discount {
+    width: 460px;
+  }
+
+  .discount__promo {
+    font-size: 30px;
+  }
+
+  .slider__wrapper-main {
+    width: 740px;
+  }
+
+  .slide {
+    left: 0px;
+  	width: 768px;
+  }
+
+  .slide-gadgets,
+  .slide-calculator,
+  .slide-robot {
+    margin-right: 10px;
+  }
+
+  .slide-description {
+    width: 310px;
+    margin-left: 10px;
+  }
+
+  .slide-robot {
+    padding-right: 0;
+  }
+
+  .slider-control {
+    bottom: 45px;
+    left: 56%;
+    width: 120px;
+  }
+
+  .slider-control__btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  #btn-1:checked ~ .slider-control label[for="btn-1"],
+  #btn-2:checked ~ .slider-control label[for="btn-2"],
+  #btn-3:checked ~ .slider-control label[for="btn-3"] {
+    background-color: #b63538;
+  }
+
+  .map__wrapper {
+    width: 740px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -112,6 +250,6 @@
   }
 
   .modal-window {
-    top: 1180px;
+    top: 600px;
   }
 }
