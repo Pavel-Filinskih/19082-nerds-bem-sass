@@ -3,27 +3,36 @@
 }
 
 .company-info,
-.company-offers,
-.company-logo,
-.company-benefits  {
-	display: inline-block;
+.company-offers {
+    text-align: center;
+
+  &::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  }
+}
+
+.company-benefits {
+  display: inline-block;
+	width: 230px;
 	vertical-align: top;
 }
 
-.company-info,
-.company-offers {
-	width: 580px;
-	padding-right: 50px;
-}
-
-.company-logo,
-.company-benefits {
-	width: 230px;
-}
-
 .company-logo {
+  display: inline-block;
+  width: 230px;
 	padding-left: 15px;
 	text-align: center;
+}
+
+.company-info__wrapper,
+.company-offers__wrapper {
+  display: inline-block;
+	width: 580px;
+	padding-right: 50px;
+  vertical-align: top;
+  text-align: left;
 }
 
 .company-info__promo {
@@ -33,6 +42,11 @@
 	font-size: 36px;
 	line-height: 36px;
 	vertical-align: top;
+}
+
+.company-info__text {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .company-logo__text {
