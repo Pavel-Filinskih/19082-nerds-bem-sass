@@ -1,6 +1,5 @@
 .basket {
 	float: right;
-	min-width: 100px;
 }
 
 .basket__icon::before {
@@ -8,7 +7,7 @@
 	margin-right: 25px;
 	font-family: "symbols-nerds";
 	font-size: 16px;
-	line-height: 8,56px;
+	line-height: 8.56px;
 	color: #000;
 	opacity: 0.3;
 }
@@ -25,15 +24,12 @@
 
 .basket__cart {
 	display: inline-block;
-	margin-top: 52px;
-	margin-bottom: 6px;
-	padding-left: 16px;
-	font-size: 14px;
-	line-height: 30px;
+  line-height: 30px;
+  font-size: 14px;
 	vertical-align: top;
-	color: #000;
 	text-decoration: none;
 	text-transform: uppercase;
+  color: #000;
 
   &:hover {
   	color: #fb565a;
@@ -42,5 +38,41 @@
   &:focus {
   	color: #000;
   	opacity: 0.4;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1150px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+  .basket {
+    float: none;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+
+  .basket {
+    float: none;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+
+  .basket {
+    float: none;
+		margin-top: 40px;
+    text-align: center;
+  }
+
+  .basket__icon::before {
+  	content: "";
+  	margin-right: 0;
   }
 }

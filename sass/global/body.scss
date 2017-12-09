@@ -11,16 +11,15 @@ body {
 h1 {
 	font-size: 40px;
 	line-height: normal;
+  font-weight: 300;
+	color: #283136;
 }
 
 h2 {
 	font-size: 18px;
 	line-height: 30px;
-}
-
-h1, h2 {
-	font-weight: normal;
-	color: black;
+  font-weight: 300;
+	color: #283136;
 }
 
 img {
@@ -32,15 +31,4 @@ iframe {
 	position: relative;
 	width: 100%;
 	z-index: 10;
-}
-
-// убрать !
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.collapsefix {
-	overflow: hidden;
 }

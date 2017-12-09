@@ -1,8 +1,17 @@
-.company-wrapper {
-	margin-bottom: 50px;
+.company {
+	margin-bottom: 40px;
 }
 
-.company-info,
+.company__wrapper {
+	max-width: 1200px;
+  min-width: 320px;
+	margin: 0 auto;
+}
+
+.company-info {
+  margin-bottom: 13px;
+}
+
 .company-offers {
     text-align: center;
 
@@ -14,23 +23,29 @@
 }
 
 .company-benefits {
-  display: inline-block;
-	width: 230px;
+	width: 19.16666666666667%; // 230px / 1200px
+  float: right;
 	vertical-align: top;
+  text-align: left;
 }
 
 .company-logo {
   display: inline-block;
   width: 230px;
-	padding-left: 15px;
+  margin-bottom: 13px;
 	text-align: center;
 }
 
-.company-info__wrapper,
-.company-offers__wrapper {
+.company-info__wrapper {
   display: inline-block;
-	width: 580px;
-	padding-right: 50px;
+	width: 100%; // 580px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.company-offers__wrapper {
+	width: 37.5%; // 450px / 1200px
+  float: left;
   vertical-align: top;
   text-align: left;
 }
@@ -54,31 +69,38 @@
 	text-transform: uppercase;
 }
 
-.company-logo__date::before,
-.company-logo__date::after {
-	position: relative;
-	content: "";
-	display: inline-block;
-	width: 26%;
-	vertical-align: middle;
-	border-bottom: 2px solid #eee;
+.company-logo__date {
+  &::before {
+  	position: relative;
+  	content: "";
+  	display: inline-block;
+  	width: 26%;
+    right: 15px;
+  	margin-left: -50%;
+  	vertical-align: middle;
+  	border-bottom: 2px solid #eee;
+  }
+
+  &::after {
+  	position: relative;
+  	content: "";
+  	display: inline-block;
+  	width: 26%;
+    left: 15px;
+  	margin-right: -50%;
+  	vertical-align: middle;
+  	border-bottom: 2px solid #eee;
+  }
 }
 
-.company-logo__date::before {
-	right: 15px;
-	margin-left: -50%;
-}
-.company-logo__date::after {
-	left: 15px;
-	margin-right: -50%;
-}
-
-.company-info,
-.company-logo {
-	margin-bottom: 13px;
+.company-offers__title {
+	padding-bottom: 7px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
 }
 
-.company-offers__title,
 .company-benefits__title {
 	padding-bottom: 7px;
 	font-weight: 500;
@@ -87,32 +109,128 @@
 	text-transform: uppercase;
 }
 
-.company-benefits {
-	padding-left: 7px;
-}
-
-.company-offers__list,
-.company-benefits__list  {
+.company-offers__list {
 	margin: 0;
 	padding: 0;
 }
 
-.company-offers__item,
+.company-benefits__list {
+	margin: 0;
+	padding: 0;
+}
+
+.company-offers__item {
+	padding-bottom: 22px;
+	list-style: none;
+	text-decoration: none;
+
+  &::before {
+  	position: relative;
+  	bottom: 2px;
+  	right: 11px;
+  	content: "";
+  	display: inline-block;
+  	width: 25px;
+  	margin-left: 10px;
+  	vertical-align: middle;
+  	border-bottom: 2px solid #fb565a;
+  }
+}
+
 .company-benefits__item {
 	padding-bottom: 22px;
 	list-style: none;
 	text-decoration: none;
+
+  &::before {
+  	position: relative;
+  	bottom: 2px;
+  	right: 11px;
+  	content: "";
+  	display: inline-block;
+  	width: 25px;
+  	margin-left: 10px;
+  	vertical-align: middle;
+  	border-bottom: 2px solid #fb565a;
+  }
 }
 
-.company-offers__item::before ,
-.company-benefits__item::before {
-	position: relative;
-	bottom: 2px;
-	right: 11px;
-	content: "";
-	display: inline-block;
-	width: 25px;
-	margin-left: 10px;
-	vertical-align: middle;
-	border-bottom: 2px solid #fb565a;
+@media (min-width: 961px) and (max-width: 1150px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+  .company-logo {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .company-offers__wrapper {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+  }
+
+  .company-benefits {
+    display: inline-block;
+  	width: 50%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+
+  .company-logo {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .company-offers__wrapper {
+    display: inline-block;
+    width: 80%;
+    float: none;
+    text-align: left;
+  }
+
+  .company-benefits {
+    display: inline-block;
+  	width: 80%;
+    float: none;
+    text-align: left;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+
+  .company-benefits {
+  	width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .company-logo {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .company-offers__wrapper {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .company-info__promo {
+  	font-size: 25px;
+  }
+
+	.company-benefits__item::before {
+		content: none;
+	}
+
+	.company-offers__item::before {
+		content: none;
+	}
 }

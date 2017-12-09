@@ -1,12 +1,14 @@
 @import "global/normalize.css";
+// @import "global/mixins";
 @import "global/fonts";
 @import "global/icons";
 @import "global/body";
 
-@import "blocks/wrapper-bg";
-@import "blocks/wrapper-main";
+// index.html
+
+@import "blocks/header";
 @import "blocks/logo";
-@import "blocks/main-menu";
+@import "blocks/menu";
 @import "blocks/basket";
 @import "blocks/slider";
 
@@ -16,13 +18,11 @@
 @import "blocks/map";
 
 @import "blocks/footer";
-@import "blocks/social-button";
+@import "blocks/social";
 @import "blocks/discount";
-
 @import "blocks/modal-window";
-@import "blocks/animation";
 
-// стили catalog.scss
+// catalog.html
 
 @import "blocks/welcom";
 @import "blocks/catalog-content";

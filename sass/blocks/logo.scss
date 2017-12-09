@@ -1,6 +1,35 @@
 .logo {
 	float: left;
-	padding-top: 27px;
-	margin-right: 160px;
-	width: 140px;
+}
+
+@media (min-width: 961px) and (max-width: 1150px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+  .logo {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+
+  .logo {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+
+  .logo {
+    display: block;
+    float: none;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }

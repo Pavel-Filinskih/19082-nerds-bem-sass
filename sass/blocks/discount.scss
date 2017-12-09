@@ -1,5 +1,5 @@
 .discount {
-	width: 561px;
+	width: 46.66666666666667%; // 560px / 1200px
 	float: right;
 }
 
@@ -11,4 +11,39 @@
 
 .discount__discount {
 	margin-top: 10px;
+}
+
+@media (min-width: 961px) and (max-width: 1150px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+  .discount {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+
+  .discount {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+
+  .discount {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .discount__promo {
+  	font-size: 20px;
+  }
 }

@@ -1,19 +1,27 @@
 .services {
-	margin-bottom: 59px;
-	padding-bottom: 80px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
   text-align: center;
   font-size: 0;
 	border-bottom: 2px solid #eee;
 }
 
+.services__wrapper {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
 .services-site {
 	width: 20%; // 240px / 1200px
 	display: inline-block;
+  vertical-align: top;
 	margin-right: 6.666666666666667%; // 80px / 1200px
 }
 
 .services-site__title {
 	margin-top: 17px;
+	font-size: 15px;
 	text-transform: uppercase;
 }
 
@@ -57,12 +65,14 @@
 .services-apps {
 	width: 20%; // 240px / 1200px
   display: inline-block;
+  vertical-align: top;
 	margin-right: 6.666666666666667%; // 80px / 1200px
 }
 
 .services-apps__title {
 	margin-top: 17px;
 	margin-left: -5px;
+	font-size: 15px;
 	text-transform: uppercase;
 }
 
@@ -106,11 +116,13 @@
 .services-presentations {
 	width: 20%; // 240px / 1200px
   display: inline-block;
+  vertical-align: top;
 }
 
 .services-presentations__title {
 	margin-top: 17px;
 	margin-left: -4px;
+	font-size: 15px;
 	text-transform: uppercase;
 }
 
@@ -149,4 +161,72 @@
   	background-color: #b63538;
   	box-shadow: inset 0 3px #9b2d30;
   }
+}
+
+@media (min-width: 961px) and (max-width: 1150px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+  .services-site {
+  	width: 22%;
+  }
+
+  .services-apps {
+  	width: 22%;
+  }
+
+  .services-presentations {
+  	width: 22%;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+
+  .services-site {
+  	width: 26.66666666666667%;
+  }
+
+  .services-apps {
+  	width: 26.66666666666667%;
+  }
+
+  .services-presentations {
+  	width: 26.66666666666667%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+
+  .services-site {
+  	width: 100%;
+    display: block;
+  	margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+	.services-site__title {
+  	margin-top: 0;
+	}
+
+  .services-apps {
+  	width: 100%;
+    display: block;
+  	margin-right: 0;
+		margin-bottom: 40px;
+  }
+
+	.services-apps__title {
+  	margin-top: 0;
+	}
+
+  .services-presentations {
+  	width: 100%;
+    display: block;
+  }
+
+	.services-presentations__title {
+  	margin-top: 0;
+	}
 }

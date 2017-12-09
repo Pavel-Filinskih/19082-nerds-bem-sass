@@ -1,3 +1,15 @@
 .footer {
-	margin-top: 75px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.footer__wrapper {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
 }
