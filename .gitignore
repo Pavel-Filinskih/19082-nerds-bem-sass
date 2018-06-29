@@ -6,9 +6,10 @@
 *.psd
 *.sublime*
 .sass-cache
-Thumbs.db
-css/*.css
+*.css
+css
 build
+Thumbs.db
 node_modules/
 *.json
 gulpfile.js
