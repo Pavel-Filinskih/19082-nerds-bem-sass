@@ -5,8 +5,10 @@
 *.pdf
 *.psd
 *.sublime*
-css/*.css
-node_modules/
-Thumbs.db
-build
 .sass-cache
+Thumbs.db
+css/*.css
+build
+node_modules/
+*.json
+gulpfile.js
